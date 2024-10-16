@@ -13,6 +13,7 @@ const Body = () => {
   const user = useSelector((store) => store.user);
   const fetchUser = async () => {
     try {
+      if (user) return;
       const res = await axios.get(BASE_URL + "/profile", {
         withCredentials: true,
       });
@@ -30,6 +31,7 @@ const Body = () => {
     if (!user) {
       fetchUser();
     }
+    console.log("called!!");
   }, []);
   return (
     <div>
