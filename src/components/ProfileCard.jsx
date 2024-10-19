@@ -13,8 +13,8 @@ const ProfileCard = ({ user }) => {
             <h2 className="card-title">{firstName + " " + lastName}</h2>
             <p>{emailId}</p>
             <p>{about}</p>
-            <p>{"Age: " + age}</p>
-            <p>{"Gender: " + gender}</p>
+            <p>{"Age: " + (age || "")}</p>
+            <p>{"Gender: " + (gender || "")}</p>
           </div>
         </div>
       </div>
