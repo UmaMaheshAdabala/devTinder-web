@@ -31,11 +31,7 @@ const Login = () => {
       console.error(err);
     }
   };
-  useEffect(() => {
-    if (user) {
-      return navigate("/");
-    }
-  }, []);
+
   return (
     <div className="justify-center flex m-7">
       <div className="card bg-base-300 w-96 shadow-xl ">

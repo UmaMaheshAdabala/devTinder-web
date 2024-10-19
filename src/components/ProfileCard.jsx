@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProfileCard = ({ user }) => {
-  const { firstName, lastName, age, emailId, about, photoUrl } = user;
+  const { firstName, lastName, age, emailId, about, photoUrl, gender } = user;
   return (
     <div>
       <div className="flex justify-center m-5">
@@ -14,6 +14,7 @@ const ProfileCard = ({ user }) => {
             <p>{emailId}</p>
             <p>{about}</p>
             <p>{"Age: " + age}</p>
+            <p>{"Gender: " + gender}</p>
           </div>
         </div>
       </div>
