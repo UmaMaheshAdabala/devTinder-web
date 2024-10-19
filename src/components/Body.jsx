@@ -32,7 +32,9 @@ const Body = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div className="overflow-scroll">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );

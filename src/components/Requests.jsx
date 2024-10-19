@@ -37,7 +37,12 @@ const Requests = () => {
     fetchRequests();
   }, []);
   if (!requests) return;
-  if (requests.length == 0) return <h1>No Requests Found</h1>;
+  if (requests.length == 0)
+    return (
+      <h1 className="flex justify-center font-bold text-3xl">
+        No Requests Found
+      </h1>
+    );
   return (
     <div>
       {requests.map((request) => {

@@ -22,6 +22,8 @@ const Feed = () => {
   useEffect(() => {
     fetchFeed();
   }, []);
+  if (!feedData) return;
+  if (feedData.length <= 0) return <h1>No New Users Found</h1>;
   return (
     feedData && (
       <div>
